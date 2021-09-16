@@ -11,7 +11,7 @@ while (true)
     Console.ResetColor();
     Console.WriteLine("[V]isa kontakter");
     Console.WriteLine("[L]ägg till person");
-    Console.WriteLine("\n[A]vsluta [R]ensa adressboken");
+    Console.WriteLine("\n[A]vsluta [R]ensa");
 
     // Console.Write("\nVal: ");
     char choice = Console.ReadKey(true).KeyChar;
