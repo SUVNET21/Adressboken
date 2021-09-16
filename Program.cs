@@ -35,9 +35,9 @@ while (true)
     }
     else if (choice == 'r')
     {
-        Console.WriteLine("\nÄr du säker på att du vill rensa adressboken? Detta går inte att ångra! (j/n)");
+        Console.WriteLine("\nAre you sure?  (y/n)");
         choice = Console.ReadKey(true).KeyChar;
-        if (choice == 'j')
+        if (choice == 'y')
         {
             contacts = "";
             numberOfPeopleInList = 0;
