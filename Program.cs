@@ -9,7 +9,7 @@ while (true)
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine($"~: ADRESSBOKEN ({numberOfPeopleInList} personer, {contacts.Length} tecken) :~\n");
     Console.ResetColor();
-    Console.WriteLine("[V]isa personer");
+    Console.WriteLine("[V]isa kontakter");
     Console.WriteLine("[L]ägg till person");
     Console.WriteLine("\n[A]vsluta [R]ensa adressboken");
 
