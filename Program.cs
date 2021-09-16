@@ -7,6 +7,7 @@ while (true)
 {
     Console.Clear();    
     Console.Clear();
+    Console.Clear();
 
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine($"~: ADRESSBOKEN ({numberOfPeopleInList} personer, {contacts.Length} tecken) :~\n");
