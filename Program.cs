@@ -5,6 +5,10 @@ int numberOfPeopleInList = 0;
 
 while (true)
 {
+        Console.Clear();
+        
+    Console.Clear();    
+    Console.Clear();
     Console.Clear();
     Console.ForegroundColor = ConsoleColor.DarkCyan;
     Console.WriteLine($"~: ADRESSBOKEN ({numberOfPeopleInList} personer, {contacts.Length} tecken) :~\n");
