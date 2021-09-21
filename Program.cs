@@ -172,9 +172,7 @@ namespace AdressbokEtt
             Console.WriteLine($"~: Välkommen till din adressbok :~\n");
             Console.WriteLine("Denna av version av adressboken kan spara både namn och telefonnummer.");
             Console.ResetColor();
-
             Console.WriteLine("[L]ägg till namn.\n[V]isa sparade namn.\n[R]ensa adressboken på namn.");
-
             Console.WriteLine("[N]ytt telefonnummer.\n[S]kriv ut alla telefonnummer.\n[T]a bort alla telefonnummer.");
             Console.WriteLine("[A]vsluta adressboken");
         }
