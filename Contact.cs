@@ -1,20 +1,21 @@
+using System.Collections.Generic;
+
 namespace AdressbokEtt
 {
     public class Contact
     {
-        Contact newContact = new();
-        string name;
+        string contactName;
         int telefonNummer;
 
         public string Name
         {
             get
             {
-                return name;
+                return contactName;
             }
             set
             {
-                name = value;
+                contactName = value;
             }
         }
         public int TelefonNummer
@@ -28,11 +29,10 @@ namespace AdressbokEtt
                 telefonNummer = value;
             }
         }
-        public Contact NewContact(string name, int TelefonNummer)
+        public Contact (string contactName, int telefonNummer)
         {
-            this.Name = "Testnamn";
-            this.TelefonNummer = 50;
+            this.contactName = "Testnamn";
+            this.telefonNummer = 0701234567;
         }
-
     }
 }

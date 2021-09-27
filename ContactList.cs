@@ -1,18 +1,26 @@
-using System;
 using System.Collections.Generic;
 namespace AdressbokEtt
 {
     public class ContactList
     {
         List<Contact> BossesLista = new();
-        public Contact NewestContact = new();
+        Contact contact = new Contact("Test",25);
 
         public void CreateContact()
         {
-            NewestContact
-            if (!string.IsNullOrWhiteSpace(NewestContact))
+                string contactName = ConsoleUtils2.ReadString("Enter the name of your contact");
+                int telefonNummer = ConsoleUtils2.ReadInt("Enter your contact's telephone number");
+                if (!string.IsNullOrWhiteSpace(contactName))
+                {
+                    BossesLista.Add(contact);
+                }
+        }
+        public void ShowInfo()
+        {
+            foreach (var Friend in BossesLista)
             {
-                BossesLista.Add(NewestContact);
+                string name = contact.Name;
+                int number = contact.TelefonNummer;
             }
         }
 

@@ -5,82 +5,78 @@ namespace AdressbokEtt
 {
     class Program
     {
-        // static List<string> nameList = new();
-        // static List<string> numberList = new();
-        // static char choice;
+        static char choice;
         // static bool extraChoice;
-        // //string contacts = "";
-        // //string numbers = "";
         static void Main(string[] args)
-
         {
+            ContactList contactList = new();
+
+            while (true)
+            {
+                ShowMenu();
+
+                {
+                    if (choice == 'l')
+                    {
+                        Console.Clear();
+                        contactList.CreateContact();
+                    }
+                    else if (choice == 'v')
+                    {
+                        contactList.ShowInfo();
+                    }
+                    // else if (choice == 'r')
+                    // {
+                    //     ClearNames();
+                    // }
+                    // else if (choice == 'a')
+                    // {
+                    //     Console.Clear();
+                    //     Console.WriteLine("Ha en fin dag! Hejdå!");
+                    //     Environment.Exit(0);
+                    // }
+
+                    // else if (choice == 'n')
+                    // {
+                    //     AddNumber();
+                    // }
+
+                    // else if (choice == 's')
+                    // {
+                    //     ShowNumbers();
+                    // }
+                    // else if (choice == 't')
+                    // {
+                    //     ClearNumbers();
+                    // }
+                }
+
+            static void ShowMenu()
+            {
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"~: Välkommen till din adressbok :~\n");
+                Console.WriteLine("Denna av version av adressboken kan spara både namn och telefonnummer.");
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("[L]ägg till namn.\n[V]isa sparade namn.\n[R]ensa adressboken på namn.");
+                Console.WriteLine("[N]ytt telefonnummer.\n[S]kriv ut alla telefonnummer.\n[T]a bort alla telefonnummer.");
+                Console.WriteLine("[A]vsluta adressboken\n");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Nyhet! Extrafunktioner: [1] Sök efter ett namn. [2] Sök efter ett nummer.");
+                Console.ResetColor();
+                GetChoice();
+            }
 
 
+            static char GetChoice()
+            {
+                return choice = Char.ToLower(Console.ReadKey(true).KeyChar);
+            }
+           }
+        }
+    }
+}   
 
-            //         if (choice == 'l')
-            //         {
-            //             AddName();
-            //         }
-            //         else if (choice == 'v')
-            //         {
-            //             ShowNames();
-            //         }
-            //         else if (choice == 'r')
-            //         {
-            //             ClearNames();
-            //         }
-            //         else if (choice == 'a')
-            //         {
-            //             Console.Clear();
-            //             Console.WriteLine("Ha en fin dag! Hejdå!");
-            //             Environment.Exit(0);
-            //         }
-
-            //         else if (choice == 'n')
-            //         {
-            //             AddNumber();
-            //         }
-
-            //         else if (choice == 's')
-            //         {
-            //             ShowNumbers();
-            //         }
-            //         else if (choice == 't')
-            //         {
-            //             ClearNumbers();
-            //         }
-            //     }
-            // }
-
-            // static void ShowMenu()
-            // {
-            //     Console.Clear();
-            //     Console.ForegroundColor = ConsoleColor.Yellow;
-            //     Console.WriteLine($"~: Välkommen till din adressbok :~\n");
-            //     Console.WriteLine("Denna av version av adressboken kan spara både namn och telefonnummer.");
-            //     Console.ForegroundColor = ConsoleColor.Magenta;
-            //     Console.WriteLine("[L]ägg till namn.\n[V]isa sparade namn.\n[R]ensa adressboken på namn.");
-            //     Console.WriteLine("[N]ytt telefonnummer.\n[S]kriv ut alla telefonnummer.\n[T]a bort alla telefonnummer.");
-            //     Console.WriteLine("[A]vsluta adressboken\n");
-            //     Console.ForegroundColor = ConsoleColor.Red;
-            //     Console.WriteLine("Nyhet! Extrafunktioner: [1] Sök efter ett namn. [2] Sök efter ett nummer.");
-            //     Console.ResetColor();
-            // }
-
-
-            // static char GetChoice()
-            // {
-            //     return choice = Char.ToLower(Console.ReadKey(true).KeyChar);
-            // }
-            // static void AddName()
-            // {
-            //     Console.Clear();
-            //     Console.Write("\nNamn: ");
-            //     string newPerson = Console.ReadLine();
-            //     if (!string.IsNullOrWhiteSpace(newPerson))
-            //     {
-            //         nameList.Add(newPerson);
-            //     }
 
             // }
 
@@ -220,6 +216,4 @@ namespace AdressbokEtt
             //                 Console.ReadKey();
 
             //             }
-        }
-    }
-}
+        
