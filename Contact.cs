@@ -29,10 +29,5 @@ namespace AdressbokEtt
                 telefonNummer = value;
             }
         }
-        public Contact (string contactName, int telefonNummer)
-        {
-            this.contactName = "Testnamn";
-            this.telefonNummer = 0701234567;
-        }
     }
 }
