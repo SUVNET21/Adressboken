@@ -17,8 +17,15 @@ namespace AdressbokEtt
 
         public void ClearContacts()
         {
-
             BossesLista.Clear();
+        }
+        public void RemoveContact(int deletionChoice)
+        {
+            BossesLista.RemoveAt(deletionChoice);
+        }
+        public void SearchContact ()
+        {
+
         }
     }
 }

@@ -6,6 +6,7 @@ namespace AdressbokEtt
     {
         string contactName;
         int telefonNummer;
+        string contactAdress;
 
         public string Name
         {
@@ -27,6 +28,17 @@ namespace AdressbokEtt
             set
             {
                 telefonNummer = value;
+            }
+        }
+        public string Adress
+        {
+            get
+            {
+                return contactAdress;
+            }
+            set
+            {
+                contactAdress = value;
             }
         }
     }
