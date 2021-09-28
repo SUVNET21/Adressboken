@@ -5,7 +5,7 @@ namespace AdressbokEtt
     public class Contact
     {
         string contactName;
-        int telefonNummer;
+        string telefonNummer;
         string contactAdress;
 
         public string Name
@@ -19,7 +19,7 @@ namespace AdressbokEtt
                 contactName = value;
             }
         }
-        public int TelefonNummer
+        public string TelefonNummer
         {
             get
             {

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AdressbokEtt
 {
     class Program
     {
         static char choice;
-        static bool extraChoice=false;
+        static public string searchedName;
         static public int deletionChoice;
+
         static void Main(string[] args)
         {
             ContactBook contactBook = new();
@@ -21,7 +23,7 @@ namespace AdressbokEtt
                     Console.Clear();
                     Contact contact = new Contact();
                     contact.Name = ConsoleUtils2.ReadString("Enter the name of your contact: ");
-                    contact.TelefonNummer = ConsoleUtils2.ReadInt("Enter your contact's telephone number: ");
+                    contact.TelefonNummer = ConsoleUtils2.ReadString("Enter your contact's telephone number: ");
                     contact.Adress = ConsoleUtils2.ReadString("Enter the adress of your contact: ");
                     if (!string.IsNullOrWhiteSpace(contact.Name))
                     {
@@ -189,6 +191,13 @@ namespace AdressbokEtt
                 Console.WriteLine("Hoppsan! Nu gick något snett. Använd knapparna Y eller N för att svara.");
                 Pause();
             }
+        }
+        static void SearchName(ContactBook contactBook)
+        {
+            List<Contact> ContactList = contactBook.GetAllContacts();
+            searchedName = ConsoleUtils2.ReadString("Vilket namn vill du söka på?");
+            for (int i =0; i < contactBook.Count; i++);
+
         }
     }
 }

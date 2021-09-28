@@ -23,9 +23,5 @@ namespace AdressbokEtt
         {
             BossesLista.RemoveAt(deletionChoice);
         }
-        public void SearchContact ()
-        {
-
-        }
     }
 }
