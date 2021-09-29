@@ -194,28 +194,11 @@ namespace AdressbokEtt
         }
         static void SearchName(ContactBook contactBook)
         {
-            List<Contact> ContactList = contactBook.GetAllContacts();
-            searchedName = ConsoleUtils2.ReadString("Vilket namn vill du söka på?");
-            for (int i =0; i < contactBook.Count; i++);
-
+            // List<Contact> ContactList = contactBook.GetAllContacts();
+            // searchedName = ConsoleUtils2.ReadString("Vilket namn vill du söka på?");
+            // var matchingvalues = ContactList.Contains
+            // .Where(searchedName => searchedName.Contains(searchedName));
+            // ej färdigt
         }
     }
 }
-
-
-// static void AddNumber()
-// {
-//     Console.Clear();
-//     Console.Write("\nTelefonnummer: ");
-//     string newNumber = Console.ReadLine();
-//     if (!string.IsNullOrWhiteSpace(newNumber))
-//     {
-//         numberList.Add(newNumber);
-//     }
-//     else
-//     {
-//         Console.Clear();
-//         Console.WriteLine("Du har matat in ett felaktigt telefonnummer. Använd bara siffror!");
-//         Console.ReadKey();
-//     }
-// }
